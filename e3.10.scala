@@ -11,6 +11,7 @@ def foldLeft[A,B](as: List[A], z: B)(f: (B,A) => B): B
 */
 
 object Exercise_3_10 {
+  @annotation.tailrec
   def foldLeft[A,B](as: List[A], z: B)(f: (B,A) => B): B =
     as match {
       case Nil => z
