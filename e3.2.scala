@@ -10,6 +10,7 @@ implementation if the List is Nil? We'll return to this question in the next cha
 object Exercise_3_2 {
   def tail(l: List[Any]) = { l match {
     case Nil => throw new NoSuchElementException
+    case x::Nil => throw new NoSuchElementException
     case x::xs => xs
   }}
 }
