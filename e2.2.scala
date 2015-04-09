@@ -13,8 +13,8 @@ object Exercise_2_2 {
     @annotation.tailrec
     def go(n: Int): Boolean = {
       if(n > as.length -2) true
-	  else (ordered(as(n),as(n+1))) && go(n+1)
+      else (ordered(as(n),as(n+1))) && go(n+1)
     }
-	go(0)    
+    go(0)
   }
 }
