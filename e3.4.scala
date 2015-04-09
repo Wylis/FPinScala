@@ -16,8 +16,7 @@ object Exercise_3_4 {
       l
     else {
       l match {
-        case Nil => throw new NoSuchElementException
-        case x::Nil => throw new NoSuchElementException
+        case Nil => Nil
         case x::xs => drop(xs,n-1)
       }
     }
