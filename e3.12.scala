@@ -13,6 +13,6 @@ object Exercise_3_12 {
       case Nil => z
       case h::t => foldLeft(t, f(z,h))(f)
     }
-  
+
   def reverse[A](ns: List[A]): List[A] = foldLeft(ns,List():List[A])((b,a) => a::b)
 }

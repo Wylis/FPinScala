@@ -21,14 +21,12 @@ object Exercise_3_13 {
       case Nil => z
       case h::t => f(h, foldRight(t, z)(f))
     }
-  
+
   def foldLeft2[A,B](as: List[A], z: B)(f: (B,A) => B): B = {
     foldRight(as, (b:B) => b)((a,g) => b => g(f(b,a)))(z)
   }
-  
+
   def foldRight2[A,B](as: List[A], z: B)(f: (B,A) => B): B = {
     foldLeft(as, (b:B) => b)((g,b) => a => g(f(a,b)))(z)
   }
-  
-  
 }

@@ -12,12 +12,12 @@ object Exercise_3_5 {
   @annotation.tailrec
   def dropWhile[A](l: List[A], f: A => Boolean): List[A] = {
     l match {
-      case Nil => Nil	  
+      case Nil => Nil
       case x::xs =>
-	    if(f(x))
-	      dropWhile(xs,f)
-		else
-	      l
+        if(f(x))
+          dropWhile(xs,f)
+        else
+          l
     }
   }
 }

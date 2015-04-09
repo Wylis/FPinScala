@@ -14,7 +14,7 @@ object Exercise_3_6 {
   def init[A](l: List[A]): List[A] = {
     l match {
       case Nil => Nil
-	  case h::Nil => Nil
+      case h::Nil => Nil
       case h::t => h::init(t)
     }
   }

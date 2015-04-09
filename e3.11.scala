@@ -12,10 +12,10 @@ object Exercise_3_11 {
       case Nil => z
       case h::t => foldLeft(t, f(z,h))(f)
     }
-  
+
   def sum(ns: List[Int]) = foldLeft(ns,0)(_+_)
-  
+
   def product(ns: List[Double]) = foldLeft(ns,1.0)(_*_)
-  
+
   def length(ns: List[Double]) = foldLeft(ns,0)((x,_) => x+1)
 }
