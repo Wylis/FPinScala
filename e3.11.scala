@@ -3,8 +3,6 @@
 Exercise 3.11
 Write a sum,product, and a function to compute the length of a list using foldLeft
 
-def foldLeft[A,B](as: List[A], z: B)(f: (B,A) => B): B
-
 */
 
 object Exercise_3_11 {
